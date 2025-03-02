@@ -101,7 +101,7 @@ print(f"Data 2022 rows and columns: {data_22.shape}")
 print(f"Merged Geometry 2022 rows and columns: {geo_merged_22.shape}")
 
 # Merge geometry with data - 2016
-geo_merged_16 = geo_16.merge(data_16, how='inner', left_on='GEOGID', right_on='GEOGID', suffixes=('_g','_d'))
+geo_merged_16 = geo_16.merge(data_16, how='inner', left_on='GUID', right_on='GUID', suffixes=('_g','_d'))
 
 print(f"Geometry 2016 rows and columns: {geo_16.shape}")
 print(f"Data 2016 rows and columns: {data_16.shape}")
