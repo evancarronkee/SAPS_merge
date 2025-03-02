@@ -23,7 +23,7 @@ files = [
 ]
 
 def download_files(url, filename):
-    print(f"Attempting to download: {filename} from {url}")
+    print(f"Attempting to download: {filename}")
 
     response = requests.get(url, stream=True)
 
