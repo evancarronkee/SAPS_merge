@@ -1,4 +1,4 @@
-# saps_merge
+# SAPS_merge
 Python code to merge SAPS geometry, attribute, and data files for 2011, 2016, and 2022.
 
 This code outputs two merged datasets per boundary type per year: a merge of data and attributes and a merge of geometry and data. Note that the attribute file is just all the non-geometry columns included in the geometry file.
