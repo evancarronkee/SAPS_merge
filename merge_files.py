@@ -3,7 +3,6 @@ from pathlib import Path
 import pandas as pd
 import geopandas as gpd
 
-
 # Set up directory path
 dirname = Path(__file__).parent
 
@@ -24,6 +23,12 @@ merged_16_path = "SAPS_output/sa_16_merged.csv"
 geo_merged_22_path = "SAPS_output/sa_22_geo_merged.geojson"
 geo_merged_16_path = "SAPS_output/sa_16_geo_merged.geojson"
 
+# Create /SAPS_output/
+if not os.path.exists(os.path.join(dirname, "SAPS_output/")):
+    # if the demo_folder directory is not present
+    # then create it.
+    os.makedirs(os.path.join(dirname, "SAPS_output/"))
+
 ###################
 # Preparing merge #
 ###################
@@ -39,7 +44,6 @@ geo_22 = gpd.read_file(os.path.join(dirname, geo_22_path))
 geo_16 = gpd.read_file(os.path.join(dirname, geo_16_path))
 
 print("Data read in.")
-
 
 # Remove the prefix "SA2017_" from all GEOGID in data 16
 data_16['GEOGID'] = data_16['GEOGID'].str.replace('SA2017_', '')
