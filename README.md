@@ -10,6 +10,9 @@ The attribute file (CSV) and geometry file (GeoJSON) for both years is downloade
 The data file (CSV) is downloaded from the CSO SAPS website for the relevant year. See links to the relevant pages below:
 
 [Attributes and Geometry 2022](https://data-osi.opendata.arcgis.com/datasets/osi::cso-small-areas-national-statistical-boundaries-2022-ungeneralised/about)
+
 [Attributes and Geometry 2016](https://data-osi.opendata.arcgis.com/datasets/osi::small-areas-ungeneralised-national-statistical-boundaries-2015/about)
+
 [Data 2022](https://www.cso.ie/en/census/census2022/census2022smallareapopulationstatistics/)
+
 [Data 2016](https://www.cso.ie/en/census/census2016reports/census2016smallareapopulationstatistics/) 
